@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Admina | Travel.pl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Travel.pl</div>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="#" id="logout">Wyloguj</a>
+        </nav>
+    </header>
+
+    <main class="admin-panel">
+        <h1>Panel Administratora</h1>
+        
+        <section class="admin-actions">
+            <h2>Dodaj nową ofertę</h2>
+            <form id="offerForm">
+                <input type="text" placeholder="Nazwa hotelu" required>
+                <input type="text" placeholder="Destynacja" required>
+                <input type="number" placeholder="Cena" required>
+                <input type="date" placeholder="Data dostępności" required>
+                <textarea placeholder="Opis"></textarea>
+                <button type="submit">Dodaj ofertę</button>
+            </form>
+        </section>
+
+        <section class="offers-list">
+            <h2>Istniejące oferty</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nazwa</th>
+                        <th>Destynacja</th>
+                        <th>Cena</th>
+                        <th>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Hotel Paris</td>
+                        <td>Paryż, Francja</td>
+                        <td>1200 PLN</td>
+                        <td>
+                            <button class="edit">Edytuj</button>
+                            <button class="delete">Usuń</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
